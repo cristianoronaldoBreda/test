@@ -47,6 +47,9 @@
     }
     .nav a{color:var(--text);text-decoration:none;font-weight:700;font-size:14px;padding:8px 12px;border-radius:10px;transition:color .2s, background .2s}
     .nav a:hover,.nav a.active{color:var(--accent);background:rgba(255,187,0,.08)}
+    .nav a { transition: color .2s, background .2s, transform .2s; }
+.nav a.active { background: rgba(252,148,3,.12); }
+
     .logo-right{position:absolute;right:20px;top:50%;transform:translateY(-50%);display:flex;align-items:center;justify-content:center;pointer-events:auto}
     .logo-right img{height:56px;width:auto;filter:drop-shadow(0 3px 10px rgba(0,0,0,.35));transition:transform .25s ease, opacity .25s ease}
     .logo-right:hover img{transform:scale(1.04);opacity:.95}
@@ -275,43 +278,50 @@
     </svg>
   </div>
 
-  <section id="aanpak">
-    <div class="panel reveal">
-      <h2>Mijn aanpak</h2>
-      <p>Van vaag idee naar tastbaar resultaat. Scroll of hover over de stappen — het oranje paneel reageert direct.</p>
-      <div class="scrollytell">
-        <aside class="sticky-visual" aria-hidden="true">
-          <!-- Oranje paneel -->
-          <div class="step-panel" aria-live="polite">
-            <small>Stap</small>
-            <div class="title" id="step-panel-title">Research →</div>
-          </div>
-        </aside>
-        <div class="steps">
-          <article class="step active" data-screen="Research →">
-            <h3>1. Research & probleemkader</h3>
-            <p>Interviews, deskresearch en journey maps om het echte probleem te vinden.</p>
-          </article>
-          <article class="step" data-screen="Schetsen →">
-            <h3>2. Schetsen & flows</h3>
-            <p>Task flows en low-fi schetsen om snel te valideren.</p>
-          </article>
-          <article class="step" data-screen="Prototype →">
-            <h3>3. Prototype</h3>
-            <p>Figma-prototype (interacties, states) om gedrag en content te testen.</p>
-          </article>
-          <article class="step" data-screen="Usability →">
-            <h3>4. Usability tests</h3>
-            <p>Think-aloud, SUS, task completion. Itereren op inzichten.</p>
-          </article>
-          <article class="step" data-screen="Ship ✔">
-            <h3>5. Visual polish & ship</h3>
-            <p>Design tokens, states, empty/error, animaties en documentatie.</p>
-          </article>
+ <section id="aanpak">
+  <div class="panel reveal">
+    <h2>Mijn aanpak</h2>
+    <p>Van idee tot impact. </p>
+
+    <div class="scrollytell">
+      <!-- Oranje paneel links -->
+      <aside class="sticky-visual" aria-hidden="true">
+        <div class="step-panel" aria-live="polite">
+          <small>Stap</small>
+          <div class="title" id="step-panel-title">Onderzoeken →</div>
         </div>
+      </aside>
+
+      <!-- Stappen rechts -->
+      <div class="steps">
+        <article class="step active" data-screen="Onderzoeken →">
+          <h3>1. Onderzoeken & Begrijpen</h3>
+          <p>Elk project begint met luisteren en kijken. Ik verdiep me in de context, de doelgroep en de vraag achter het project. Wat is het doel, en welke impact willen we maken? Zo ontstaat een stevige basis voor het ontwerp.</p>
+        </article>
+
+        <article class="step" data-screen="Concept →">
+          <h3>2. Conceptontwikkeling</h3>
+          <p>Op basis van de inzichten ontwikkel ik een helder concept: de kern van het project. Dit concept bepaalt de richting, de sfeer en de boodschap. Het is het verhaal dat alles bij elkaar houdt.</p>
+        </article>
+
+        <article class="step" data-screen="Experimenteren →">
+          <h3>3. Experimenteren & Ontdekken</h3>
+          <p>In deze fase krijgt het concept vorm. Ik onderzoek verschillende mogelijkheden, test ideeën en werk met ruwe schetsen, prototypes of montages. Door te maken, ontdekken we wat werkt en waar het project het sterkst wordt.</p>
+        </article>
+
+        <article class="step" data-screen="Realiseren →">
+          <h3>4. Uitwerken & Realiseren</h3>
+          <p>Wanneer de richting duidelijk is, werk ik het project uit tot een concreet eindresultaat. Van beeld en geluid tot interactie en vormgeving — alles wordt zorgvuldig uitgewerkt om een samenhangend geheel te vormen.</p>
+        </article>
+
+        <article class="step" data-screen="Reflecteren →">
+          <h3>5. Reflecteren & Delen</h3>
+          <p>Na de realisatie kijk ik terug op het proces en het resultaat. Wat hebben we geleerd, hoe wordt het ontvangen, en waar liggen kansen voor doorontwikkeling? Zo blijft elk project groeien, ook na oplevering.</p>
+        </article>
       </div>
     </div>
-  </section>
+  </div>
+</section>
 
   <div class="divider" aria-hidden="true">
     <svg viewBox="0 0 1440 64" preserveAspectRatio="none" role="img" aria-label="decorative">
